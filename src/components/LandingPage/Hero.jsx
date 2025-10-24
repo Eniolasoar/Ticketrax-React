@@ -23,7 +23,7 @@ export default function Hero() {
           </p>
 
           <div className="hero-actions">
-            <a href="/auth/signup" className="btn btn-primary">
+            <a href="/auth/signup" className="btn btn-primary2">
               Get Started
             </a>
             <a href="/auth/login" className="btn btn-ghost">

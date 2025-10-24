@@ -27,7 +27,7 @@ export default function Navbar() {
         <nav className={`nav ${open ? "open" : ""}`} aria-label="Primary">
           <a className="nav-link" href="#features">Features</a>
           <a className="nav-link" href="/auth/login">Login</a>
-          <a className="btn btn-primary nav-cta" href="/auth/signup">Sign up</a>
+          <a className="btn btn-primary2 nav-cta" href="/auth/signup">Sign up</a>
         </nav>
       </div>
     </header>
