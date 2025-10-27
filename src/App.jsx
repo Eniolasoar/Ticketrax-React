@@ -6,6 +6,7 @@ import LandingPage from "./pages/LandingPage";
 import Signup from "./components/auth/Signup";
 import Login from "./components/auth/Login";
 import Dashboard from "./pages/Dashboard";
+import { TicketManagement } from "./pages/TicketManagement";
 
 function ProtectedRoute({ children }) {
   return isAuthenticated() ? children : <Navigate to="/auth/login" replace />;
@@ -46,6 +47,14 @@ export default function App() {
           element={
             <ProtectedRoute>
               <Dashboard/>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/tickets"
+          element={
+            <ProtectedRoute>
+              <TicketManagement/>
             </ProtectedRoute>
           }
         />

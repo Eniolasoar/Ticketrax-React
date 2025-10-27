@@ -3,7 +3,8 @@ import Navbar from '../components/LandingPage/Navbar'
 import Hero from '../components/LandingPage/Hero'
 import Features from '../components/LandingPage/Features'
 import Banner from '../components/LandingPage/Banner'
-import Footer from '../components/LandingPage/Footer'
+import Footer from '../components/shared/Footer'
+
 
 const LandingPage = () => {
   return (
@@ -19,7 +20,7 @@ const LandingPage = () => {
           <Banner />
         </section>
       </main>
-      <Footer /></>
+      <Footer/></>
   )
 }
 

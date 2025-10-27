@@ -41,11 +41,14 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="features">
-      <h2 className="section-title">What Features Does Ticketrax Offer</h2>
-      <div className="features-grid" role="list">
-        {features.map(f => (
-          <article key={f.id} className="feature-card" role="listitem">
+    <section id="features" className="features" aria-labelledby="features-title">
+      <h2 id="features-title" className="section-title">
+        What Features Does Ticketrax Offer
+      </h2>
+
+      <div className="features-grid" role="list" aria-label="Feature list">
+        {features.map((f) => (
+          <article key={f.id} className="feature-card" role="listitem" tabIndex="0">
             <div className="feature-icon" aria-hidden="true">{f.icon}</div>
             <h3 className="feature-title">{f.title}</h3>
             <p className="feature-desc">{f.desc}</p>
@@ -55,3 +58,4 @@ export default function Features() {
     </section>
   );
 }
+

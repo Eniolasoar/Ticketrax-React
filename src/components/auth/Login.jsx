@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { loginUser } from "../../utils/auth";
 import Toast from "../Toast";
+import Footer from "../shared/Footer";
 
 export default function Login() {
   const [form, setForm] = useState({ identifier: "", password: "" });
@@ -32,7 +33,8 @@ export default function Login() {
   };
 
   return (
-    <main className="auth-page">
+    <>
+     <main className="auth-page">
       <h2>Login To Your Account</h2>
       <form onSubmit={handleSubmit} noValidate>
         <label>
@@ -79,5 +81,9 @@ export default function Login() {
 
       {toast && <Toast {...toast} onClose={() => setToast(null)} />}
     </main>
+    
+    <Footer/>
+    </>
+   
   );
 }

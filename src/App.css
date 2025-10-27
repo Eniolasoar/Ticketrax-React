@@ -461,6 +461,8 @@ input:focus {
 }
 .copyright{ color:var(--muted); font-size:0.88rem; }
 
+.nav-list{ list-style:none; display:flex; gap:16px; padding-left:0;align-items: center; }
+
 /* responsive */
 @media (min-width: 720px){
   .features-grid{ grid-template-columns: repeat(2,1fr); }
@@ -487,7 +489,7 @@ input:focus {
 
 /* focus states for accessibility */
 a:focus, .btn:focus, button:focus, input:focus {
-  outline: none;
+  outline: 1px solid white;
   box-shadow: var(--focus);
   border-radius: 8px;
 }
