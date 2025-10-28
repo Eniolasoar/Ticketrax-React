@@ -167,9 +167,7 @@ export const TicketManagement = () => {
           {tickets.length === 0 ? (
             <div className="empty-state" role="status">
               <p>No tickets yet. Start by creating one below.</p>
-              <button className="btn-primary" onClick={() => setShowModal(true)}>
-                Create Ticket
-              </button>
+             
             </div>
           ) : (
             <ul className="ticket-grid">

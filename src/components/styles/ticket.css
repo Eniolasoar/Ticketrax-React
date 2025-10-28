@@ -10,7 +10,7 @@
   
   .ticket-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1.5rem;
     padding-left:0px !important;
   }
@@ -118,4 +118,21 @@
     margin-bottom: 1rem;
     color: #6b7280;
   }
+  @media (min-width: 600px) and (max-width: 900px) {
   
+    /* 🔹 Two-column grid for tablets */
+    .ticket-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      width: 100%;
+      max-width: 700px;
+    }
+  
+    .ticket-card {
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: var(--soft-shadow, 0 2px 8px rgba(0, 0, 0, 0.1));
+      background: #fff;
+      margin-right: 10px;
+    }
+  }
