@@ -9,7 +9,7 @@ import { isAuthenticated } from "./utils/auth";
 import "./App.css";
 import LandingPage from "./pages/LandingPage";
 import Signup from "./pages/Signup";
-import Login from "./components/auth/Login";
+import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import { TicketManagement } from "./pages/TicketManagement";
 
