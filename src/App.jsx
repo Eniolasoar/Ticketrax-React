@@ -1,9 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import { isAuthenticated } from "./utils/auth";
 import "./App.css";
 import LandingPage from "./pages/LandingPage";
-import Signup from "./components/auth/Signup";
+import Signup from "./pages/Signup";
 import Login from "./components/auth/Login";
 import Dashboard from "./pages/Dashboard";
 import { TicketManagement } from "./pages/TicketManagement";
@@ -28,7 +33,7 @@ export default function App() {
           path="/auth/signup"
           element={
             <AuthRedirect>
-             <Signup />
+              <Signup />
             </AuthRedirect>
           }
         />
@@ -36,7 +41,7 @@ export default function App() {
           path="/auth/login"
           element={
             <AuthRedirect>
-             <Login />
+              <Login />
             </AuthRedirect>
           }
         />
@@ -46,7 +51,7 @@ export default function App() {
           path="/dashboard"
           element={
             <ProtectedRoute>
-              <Dashboard/>
+              <Dashboard />
             </ProtectedRoute>
           }
         />
@@ -54,7 +59,7 @@ export default function App() {
           path="/tickets"
           element={
             <ProtectedRoute>
-              <TicketManagement/>
+              <TicketManagement />
             </ProtectedRoute>
           }
         />

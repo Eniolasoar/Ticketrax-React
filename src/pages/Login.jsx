@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { loginUser } from "../../utils/auth";
-import Toast from "../Toast";
-import Footer from "../shared/Footer";
-
+import { loginUser } from "../utils/auth";
+import Toast from "../components/Toast";
+import Footer from "../components/shared/Footer";
 export default function Login() {
   const [form, setForm] = useState({ identifier: "", password: "" });
   const [error, setError] = useState({});
